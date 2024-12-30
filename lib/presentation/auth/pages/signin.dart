@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_login/common/bloc/button/button_state.dart';
-import 'package:flutter_login/common/bloc/button/button_state_cubit.dart';
-import 'package:flutter_login/data/models/signIn_request_params.dart';
-import 'package:flutter_login/domain/usecases/signIn.dart';
-import 'package:flutter_login/presentation/auth/service_locator.dart';
+import 'package:flutter_bloc_login/common/bloc/button/button_state.dart';
+import 'package:flutter_bloc_login/common/bloc/button/button_state_cubit.dart';
+import 'package:flutter_bloc_login/data/models/signIn_request_params.dart';
+import 'package:flutter_bloc_login/domain/usecases/signIn.dart';
+import 'package:flutter_bloc_login/presentation/auth/service_locator.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

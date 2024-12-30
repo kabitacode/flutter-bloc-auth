@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:flutter_login/core/constants/api_url.dart';
-import 'package:flutter_login/core/network/dio_client.dart';
-import 'package:flutter_login/data/models/signIn_request_params.dart';
-import 'package:flutter_login/presentation/auth/service_locator.dart';
+import 'package:flutter_bloc_login/core/constants/api_url.dart';
+import 'package:flutter_bloc_login/core/network/dio_client.dart';
+import 'package:flutter_bloc_login/data/models/signIn_request_params.dart';
+import 'package:flutter_bloc_login/presentation/auth/service_locator.dart';
 
 abstract class AuthApiServices {
   Future<Either> signIn(SigninRequestParams signInReq);
