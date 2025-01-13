@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_bloc_login/presentation/auth/pages/signin.dart';
+import 'package:flutter_bloc_login/presentation/auth/pages/login_screen.dart';
 import 'package:flutter_bloc_login/presentation/auth/service_locator.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -18,8 +18,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
-        overlays: [SystemUiOverlay.bottom]);
-    return LoginScreen();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: LoginScreen(),
+    );
   }
 }
